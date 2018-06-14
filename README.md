@@ -40,37 +40,31 @@ ViseLog.plant(new LogcatTree());//添加打印日志信息到Logcat的树
 ```
 ViseLog.d("test message");
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120920265?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 2、打印基本对象
 ```
 ViseLog.d(new Boolean(true));
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120936582?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 3、打印Bundle对象
 ```
 ViseLog.d(new Bundle());
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120736440?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 4、打印Intent对象
 ```
 ViseLog.d(new Intent());
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120818003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 5、打印Reference对象
 ```
 ViseLog.d(new SoftReference(0));
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212121002176?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 6、打印Throwable对象
 ```
 ViseLog.e(new NullPointerException("this object is null!"));
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212121030673?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 7、打印List集合
 ```
@@ -80,7 +74,6 @@ for (int i = 0; i < 5; i++) {
 }
 ViseLog.d(list);
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120800675?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 8、打印Map集合
 ```
@@ -90,21 +83,18 @@ for (int i = 0; i < 5; i++) {
 }
 ViseLog.d(map);
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120901816?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 9、打印JSON字符串
 ```
 String json = "{'xyy1':[{'test1':'test1'},{'test2':'test2'}],'xyy2':{'test3':'test3','test4':'test4'}}";
 ViseLog.json(json);
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212120844863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 10、打印XML字符串
 ```
 String xml = "<xyy><test1><test2>key</test2></test1><test3>name</test3><test4>value</test4></xyy>";
 ViseLog.xml(xml);
 ```
-![这里写图片描述](http://img.blog.csdn.net/20161212121050532?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ## 核心功能讲解
 1、森林结构
